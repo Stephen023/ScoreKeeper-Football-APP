@@ -1,0 +1,113 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/field_3"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/activity_main2"
+                style="@style/linear_layout"
+                tools:context="com.example.android.scorekeeper_football.MainActivity">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/home" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/team_a_score" />
+
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/buttons"
+                    android:onClick="addSixForTeamA"
+                    android:text="@string/touchdown" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/buttons"
+                    android:onClick="addThreeForTeamA"
+                    android:text="@string/field_goal" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/buttons"
+                    android:onClick="addTwoForTeamA"
+                    android:paddingBottom="8dp"
+                    android:text="@string/two_point" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/buttons"
+                    android:onClick="addOneForTeamA"
+                    android:text="@string/extra_point" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/View"
+                style="@style/View" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main3"
+                style="@style/linear_layout"
+                tools:context="com.example.android.scorekeeper_football.MainActivity">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/away" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/team_b_score" />
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/buttons"
+                    android:onClick="addSixForTeamB"
+                    android:text="@string/touchdown" />
+
+                <Button
+                    android:id="@+id/button6"
+                    style="@style/buttons"
+                    android:onClick="addThreeForTeamB"
+                    android:text="@string/field_goal" />
+
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/buttons"
+                    android:onClick="addTwoForTeamB"
+                    android:text="@string/two_point" />
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/buttons"
+                    android:onClick="addOneForTeamB"
+                    android:text="@string/extra_point" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/result_button"
+            android:onClick="reset_score" />
+
+    </RelativeLayout>
+</ScrollView>

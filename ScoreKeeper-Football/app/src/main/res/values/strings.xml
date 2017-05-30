@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ScoreKeeper-Football</string>
+    <string name="team_a">Home</string>
+    <string name="team_b">Away</string>
+    <string name="touchdown">Touchdown \n(+6 points)</string>
+    <string name="field_goal">Field goal\n(+3 Points)</string>
+    <string name="two_point">Two-point conversion</string>
+    <string name="extra_point">Extra point\n(+1 point)</string>
+    <string name="result">0</string>
+    <string name="b">result</string>
+    <dimen name="font_s">25sp</dimen>
+    <dimen name="font_s2">50sp</dimen>
+</resources>
